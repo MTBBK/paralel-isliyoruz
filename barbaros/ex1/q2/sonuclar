@@ -1,0 +1,79 @@
+Girdi: 65536 elemanlı 1000 adet array
+yap4: Paralel işlemeden
+yap5, yap6, yap7 için ilk parametre thread sayısı
+g++ yapX.cpp -o yapX ile derlendiler
+ 
+./yap4 0
+Zaman: 0.450681
+
+./yap5 1 0
+Zaman: 0.447576
+
+./yap5 2 0
+Zaman: 0.231045
+
+./yap5 4 0
+Zaman: 0.14125
+
+./yap5 8 0
+Zaman: 0.0735238
+
+./yap5 16 0
+Zaman: 0.051839
+
+./yap5 32 0
+Zaman: 0.0584944
+
+./yap5 64 0
+Zaman: 0.0480071
+
+./yap5 128 0
+Zaman: 0.0417833
+
+./yap5 256 0
+Zaman: 0.0860719
+
+./yap5 512 0
+Zaman: 0.111742
+
+./yap6 1 0
+Zaman: 0.00130918
+
+./yap6 2 0
+Zaman: 0.00087717
+
+./yap6 4 0
+Zaman: 0.000913142
+
+./yap6 8 0
+Zaman: 0.00164645
+
+./yap6 16 0
+Zaman: 0.00395745
+
+./yap6 32 0
+Zaman: 0.00975259
+
+./yap6 64 0
+Zaman: 0.012672
+
+./yap7 1 0
+Zaman: 0.00131505
+
+./yap7 2 0
+Zaman: 0.00114165
+
+./yap7 4 0
+Zaman: 0.00137316
+
+./yap7 8 0
+Zaman: 0.00112907
+
+./yap7 16 0
+Zaman: 0.00214117
+
+./yap7 32 0
+Zaman: 0.00332464
+
+./yap7 64 0
+Zaman: 0.00601542

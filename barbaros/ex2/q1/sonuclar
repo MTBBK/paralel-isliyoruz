@@ -1,0 +1,57 @@
+./yap22 3 <ThreadSayısı> <ResimKalitesi>
+l.jpg : Düşük Kalite Resim
+h.jpg : Yüksek Kalite Resim
+
+
+// Düşük Kalite Resim
+./yap22 3 1 l.jpg
+Zaman: 0.0292486
+
+./yap22 3 2 l.jpg
+Zaman: 0.0198091
+
+./yap22 3 3 l.jpg
+Zaman: 0.0131633
+
+./yap22 3 4 l.jpg
+Zaman: 0.00954737
+
+./yap22 3 8 l.jpg
+Zaman: 0.00504798
+
+./yap22 3 16 l.jpg
+Zaman: 0.0043511
+
+./yap22 3 32 l.jpg
+Zaman: 0.00731815
+
+./yap22 3 64 l.jpg
+Zaman: 0.00778178
+
+
+// Yüksek Kalite Resim
+./yap22 3 1 h.jpg
+Zaman: 1.22019
+
+./yap22 3 2 h.jpg
+Zaman: 0.620205
+
+./yap22 3 3 h.jpg
+Zaman: 0.431682
+
+./yap22 3 4 h.jpg
+Zaman: 0.306703
+
+./yap22 3 8 h.jpg
+Zaman: 0.184447
+
+./yap22 3 16 h.jpg
+Zaman: 0.135922
+
+./yap22 3 32 h.jpg
+Zaman: 0.115397
+
+./yap22 3 64 h.jpg
+Zaman: 0.107328
+
+
