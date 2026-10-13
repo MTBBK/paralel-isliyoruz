@@ -22,9 +22,9 @@ void multiplyMatrices(int Bl, std::vector<std::vector<float>>& arrayOne, std::ve
 	int rowCount = outputArray.size();
 	int columnCount = outputArray[0].size();
 	int arrayOneColumnCount = arrayOne[0].size();
-	for(int x=0;x<rowCount;x=std::min(x+Bl,rowCount)){
-		for(int y=0;y<columnCount;y=std::min(y+Bl,columnCount)){
-			for(int z=0;z<arrayOneColumnCount;z=std::min(z+Bl,arrayOneColumnCount)){
+	for(int x=0;x<rowCount;x=x+Bl){
+		for(int y=0;y<columnCount;y=y+Bl){
+			for(int z=0;z<arrayOneColumnCount;z=z+Bl){
 				for(int i=0;i<std::min(Bl, rowCount - x);i++){
 					for(int k=0;k<std::min(Bl, arrayOneColumnCount - z);k++){
 						for(int j=0;j<std::min(Bl, columnCount - y);j++){

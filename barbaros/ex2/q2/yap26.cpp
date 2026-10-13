@@ -77,12 +77,12 @@ int main(int argc, char* argv[]) {
 	std::thread** threadArray = new std::thread* [numberOfThreads];
 
 	int rowCount = outputArray.size();
-	int rowsPerThread = (rowCount/blockSize) / numberOfThreads;
+	int rowsPerThread = rowCount / numberOfThreads;
 
 	for (int i = 0; i < numberOfThreads; i++)
 	{
-		int startX = i * rowsPerThread * blockSize;
-		int endX = (i == numberOfThreads - 1) ? rowCount : (i + 1) * rowsPerThread * blockSize;
+		int startX = i * rowsPerThread;
+		int endX = (i == numberOfThreads - 1) ? rowCount : (i + 1) * rowsPerThread;
 		
 		threadArray[i] = new std::thread(multiplyMatrices, startX, endX, blockSize, std::ref(arrayOne), std::ref(arrayTwo), std::ref(outputArray));
 	}
