@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
 		std::cout << "Hatalı Boyutta Resimler";
 		perror("AAAA");
 	}
-		
+	
 	std::vector<std::vector<float>> arrayOne(imageOne.rows, std::vector<float>(imageOne.cols));
 	std::vector<std::vector<float>> arrayTwo(imageTwo.rows, std::vector<float>(imageTwo.cols));
 	std::vector<std::vector<float>> transposeArray(imageTwo.cols, std::vector<float>(imageTwo.rows));
