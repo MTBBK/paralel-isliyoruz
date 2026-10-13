@@ -3,6 +3,9 @@
 #include <chrono>
 #include <ctime>
 
+//Transpose ile
+// ./yap23 image1.jpg image2.jpg
+
 void printArray(std::vector<std::vector<float>>& imageArray){
 	int sizeOfVectori = imageArray.size();
 	int sizeOfVectorj = imageArray[0].size();
