@@ -1,0 +1,11 @@
+./texRotate 
+CUDA texture rotate with transpose addition (no overheads) averaged over 1000 trials is 0.019574 msecs 
+CUDA texture transpose (no overheads) averaged over 1000 trials is 0.006109 msecs 
+./texRotate 
+CUDA texture rotate with transpose addition (no overheads) averaged over 1000 trials is 0.021569 msecs 
+CUDA texture transpose (no overheads) averaged over 1000 trials is 0.006076 msecs 
+./texRotate 
+CUDA texture rotate with transpose addition (no overheads) averaged over 1000 trials is 0.019044 msecs 
+CUDA texture transpose (no overheads) averaged over 1000 trials is 0.006094 msecs 
+
+
